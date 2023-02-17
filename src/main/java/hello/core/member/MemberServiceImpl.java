@@ -3,6 +3,7 @@ package hello.core.member;
 public class MemberServiceImpl implements MemberService{
 
     //회원을 찾기 위해
+    //MemberServiceImpl는 MemberRepository(인터페이스)와 MemoryMemberRepository(구현체) 둘 다 의존 -> DIP 위반
     private final MemberRepository memberRepository = new MemoryMemberRepository();
 
 
